@@ -1,1 +1,1 @@
-console.log("The Mnetor Buddy!");
+console.log("The Mentor Buddy!");
