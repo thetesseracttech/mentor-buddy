@@ -1,6 +1,6 @@
 # mentor-buddy
 Our first project!
-### First 
+### Send a PR with format:  [user-name]/[Feature-name]
 
 ## The template the client has suggested 
 https://www.behance.net/gallery/82875253/Website-Landing-Page
