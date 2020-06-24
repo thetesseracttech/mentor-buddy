@@ -6,7 +6,7 @@
  	<meta http-equiv="X-UA-Compatible" content="IE-Edge" />
     <meta name="author" content="TESSERACT TECH" />
     <meta name="keyword" content="" />
-    <meta name="theme-color" content="" />
+    <meta name="theme-color" content="#184d47" />
     <meta name="description" content="" />
 
     <!-- Open Graph Meta Tags -->
@@ -24,20 +24,85 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 
 
 </head>
 <body>
 	<!-- Preloader -->
-	<div id="preloader"></div>
+	<div id="preloader">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>   
+    </div>
 
 	<!-- Header -->
     <header>
+        <!-- Particles Js -->
+        <div id="particles-js"></div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- <a class="navbar-brand" href="#"><img src="./img/sample-logo.jpg" alt="" /></a> -->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                     <li class="nav-item active">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"blog>Blog</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item active">
+                        <button class="" href="#" id="login">Login <i class="fa fa-sign-in-alt"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
     	<div class="hero">
-	    	<p>WELCOME TO</p>
-	        <h1>Mentor Buddy</h1>
+	    	<div class="hero__row">
+                <div class="hero__col">
+                    <p class="highlight">WELCOME TO</p>
+
+                    <h1 class="hero__title">THE <span class="hero__mark">MENTOR</span> BUDDY</h1>
+                    <h2 class="hero__subtitle">Let's walk together the path to your dream school</h2>
+
+                    <p class="hero__desc">Quite often than not, students face a scarcity of available resources and people to reach out to while applying for their higher studies. There's a plethora of study materials to refer to but limited hours to study. Which resource should I target? Does my CV actually portray my true capabilities? How do I know if I am approaching my essays right?
+                    <br><br>
+                    We'll be your buddy, mentoring you through each checkpoint on your path to your dream school.</p>
+                </div>
+
+                <div class="hero__col">
+                    <div class="hero__img__cont">
+                        <img class="hero__img" src="./img/mentor.png" alt="Hero Image" />
+                    </div>
+                </div>  
+            </div>
+            
+            <!-- Hero CTA -->
+            <div class="hero__cta">
+                <!-- <a href="#about" class="hero__cta__btn" onclick="alert('HELLO')">Schedule your profile evaluation call now &rarr;</a> -->
+                <!-- <a href="#about" class="hero__cta__btn" onclick="alert('Calling...')">Schedule a call &rarr;</a> -->
+            </div>
 	    </div>
     </header>
 
@@ -61,7 +126,12 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Easing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 	<!-- Custom JS -->
 	<script src="./js/index.js"></script>
+    <!-- Particles JS -->
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
